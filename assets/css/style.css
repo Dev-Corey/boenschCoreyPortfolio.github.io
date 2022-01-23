@@ -478,3 +478,19 @@ header h3 {
     margin: 0 auto;
 }
 
+.portfolio-item-individual .social-list__link {
+    display: flex;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    padding: 0;
+    margin: 0 0 4em;
+    font-size: 1.25em;
+}
+
+.portfolio-item-individual .social-list__link:hover {
+    text-decoration: underline;
+}
+
