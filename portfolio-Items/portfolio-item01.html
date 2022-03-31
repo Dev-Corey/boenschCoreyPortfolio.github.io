@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/css/fontawesome.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project Page</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+		<link rel="stylesheet" href="../assets/css/normalize.css" />
+		<link rel="stylesheet" href="../assets/css/css/fontawesome.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="../assets/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img href="../index.html" src="../assets/img/CROPPED-01.png" alt="Corey Boensch Logo" />
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
+					<li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+				</ul>
+			</nav>
+		</header>
 
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img href="../index.html" src="../assets/img/CROPPED-01.png" alt="Corey Boensch Logo">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
-            </ul>
-        </nav>
-    </header>
+		<!-- Intro -->
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">Welcome to<strong>Resu_Me</strong></h1>
+			<p class="section__subtitle section__subtitle--intro">A simpler resume generator application</p>
+			<img src="../assets/img/resu_meHomeCapture.PNG" alt="Resu_Me Landing Page" class="intro__img" />
+		</section>
+		<!-- / Intro -->
 
-    <!-- Intro -->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Words are<strong>HARD</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">A social app with MEME/GIF posts only</p>
-        <img src="../assets/img/whatDoYouMemeLOGIN.PNG" alt="What Do You Meme screenshot" class="intro__img">
-    </section>
-    <!-- / Intro -->
+		<!-- Portfolio Item -->
+		<div class="portfolio-item-individual">
+			<a class="social-list__link" href="https://resu-me2.herokuapp.com/" target="_blank">
+				<i class="fas fa-desktop"> Deployed to Heroku</i>
+			</a>
+			<p>Resu_Me is a MERN stack single page application that utilizes MongoDB to store a users resume progress for later use.</p>
+			<img src="../assets/img/resu_meProCapture.PNG" alt="Resu_Me Pro Page" />
+			<p>
+				Resu_Me comes in two forms: a Lite that offers minimal functionality and modifications to the layout of the resume. As well as a Pro that offers a much wider range of changes that you
+				can minipulate to get the perfect looking resume.
+			</p>
+			<p>
+				My Primary focus on this project is related to the front-end or UI. I worked on React routes and coded all the login pages as well as the strip payment system that will be coming in a
+				later update.
+			</p>
+			<p>
+				Stripe Payments is currently integrated as a donation link on the footers of the landing and login pages however, with the completion of the extra features of the Resu_Me Pro page,
+				Stripe will be converted into a payment taker as the pro will cost a one-time fee of $0.99 USD unlike other sites that cost per download.
+			</p>
+			<p>The images portion of the "Future Features" section will include a upload button to bring in your own logos or decals that you would like to display on the resume.</p>
+			<p>
+				Working with React as well as the rest of the MERN stack was rather enjoyable and very straight forward. I will definately be working on more of these applications in the future to
+				futher my React knowledge and expand my portfolio.
+			</p>
+		</div>
+		<!-- / Portfolio Item -->
 
-    <!-- Portfolio Item -->
-    <div class="portfolio-item-individual">
-        <a class="social-list__link" href="https://immense-peak-70880.herokuapp.com/" target="_blank">
-            <i class="fas fa-desktop"> Deployed to Heroku</i>
-        </a>
-        <p>Words are HARD, is a small social feed that offers a quick and fun interaction between users. You can @ to your friends and post to your feed without any words at all! The entire interaction is based in MEMEs and GIFs!</p>
-        <img src="../assets/img/whatDoYouMemeCAPTURE.PNG" alt="What Do You Meme screenshot">
-        <p>'What Do You MEME?'</p>
-        <p>Words are hard was a challenging project as the concept for it in our heads was much easier to execute than we initially anticipated. For the overall look and feel we stuck with a more Instagram/Facebook style but originally, we were aiming to go down the path that is Discord chat threads.</p>
-        <P>Discord's Gif section and the Gif section for Apple's iMessage were my inspiration for the idea and when I brought it to my team, they loved it from the get-go. Something about the simplicity of the conversation as well as the challenge of finding that ONE meme of gif that sends the message you want with just the right amount of sass just made is so much fun.</P>
-        <p>My primary focus on the project was working with the Giphy API. I at first assumed this would be easy but it proved to be quite daunting. Implementing the API was rather straight forward and happened rather quickly, but I wasn’t ready for the amount of data that Giphy sends back after a request. Your basic data: name, type, link, etc. However, the images return was huge! Every gif sends back about twenty different sizes and shapes of the gif in both static images as well as moving gifs. Once I narrowed down the return, I was looking for I was able to start inserting the response into the appropriate area and work on the styling needs to get everything where it needed to be as well as adding hover effects and play/pause functionality.</p>
-        <p>With only seven days to complete this project while all maintaining a full 40hr work week at our jobs I think we did a rather good just. The concept is there, the layout and appeal are clean, and the functionality works. It may not be a completed application but given the time constraints the MVP shows what it could possibly become.</p>
-    </div>
-    <!-- / Portfolio Item -->
+		<!-- Footer -->
+		<footer class="footer">
+			<a href="mailto:coreyboensch@devcorey.com" class="footer__link">coreyboensch@devcorey.com</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/in/coreyboensch/" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/cboensch6505" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!-- /Footer -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <a href="mailto:cboensch6505@gmail.com" class="footer__link">cboensch6505@gmail.com</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://www.linkedin.com/in/coreyboensch/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/cboensch6505" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <!-- /Footer -->
-
-    <script src="https://kit.fontawesome.com/fe9ca6828b.js" crossorigin="anonymous"></script>
-    <script src="../assets/js/script.js"></script>
-</body>
+		<script src="https://kit.fontawesome.com/fe9ca6828b.js" crossorigin="anonymous"></script>
+		<script src="../assets/js/script.js"></script>
+	</body>
 </html>

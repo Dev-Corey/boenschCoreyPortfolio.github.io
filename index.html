@@ -1,153 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corey Boensch's Portfolio</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/css/fontawesome.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Corey Boensch's Portfolio</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/css/fontawesome.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img href="./index.html" src="assets/img/CROPPED-01.png" alt="CB Logo" />
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+				</ul>
+			</nav>
+		</header>
 
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img href="./index.html" src="assets/img/CROPPED-01.png" alt="CB Logo">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-            </ul>
-        </nav>
-    </header>
+		<!-- Intro -->
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">Hi, I am <strong>Corey Boensch</strong></h1>
+			<p class="section__subtitle section__subtitle--intro">Full Stack Web Developer</p>
+			<img src="assets/img/Corey01.jpg" alt="Corey Boensch Side-Profile" class="intro__img" />
+		</section>
+		<!-- / Intro -->
 
-    <!-- Intro -->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Corey Boensch</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Full Stack Web Developer</p>
-        <img src="assets/img/Corey01.jpg" alt="Corey Boensch Side-Profile" class="intro__img">
-    </section>
-    <!-- / Intro -->
+		<!-- My Services -->
+		<section class="my-services" id="services">
+			<h2 class="section__title section__title--services">What I Do</h2>
+			<div class="services">
+				<div class="service">
+					<h3>Front-End Development</h3>
+					<p>
+						As a Front-End Web Developer, I primarily work with React, JSX, JavaScript (JS5 & JS6), HTML5, CSS3 and frameworks such as Materialize & Bootstrap.I enjoy crafting a will
+						designed and visually appealing GUI.
+					</p>
+				</div>
 
-    <!-- My Services -->
-    <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What I Do</h2>
-        <div class="services">
+				<div class="service">
+					<h3>Full-Stack Development</h3>
+					<p>
+						As a Full-Stack Web Developer my focus is the MERN stack: MongoDB, Express, React, and Node when programming. I use my skills to produce Progressive Web Applications as well as
+						Single Page Applications.
+					</p>
+				</div>
 
-            <div class="service">
-                <h3>Front-End Development</h3>
-                <p>As a Front-End Web Developer, I primarily work with HTML5, CSS3 and frameworks such as Materialize & Bootstrap, and JavaScript (JS5 & 6). I enjoy crafting a will designed and visually appealing GUI.</p>
-            </div>
+				<div class="service">
+					<h3>Back-End Development</h3>
+					<p>
+						As a Back-End Developer I use Node.js and the NPM and I have primarily worked with MySQL & NoSQL databases creating GET, POST, PUT, and DELETE routes as well as the use of
+						Object-Relational-Mapping.
+					</p>
+				</div>
+			</div>
+			<!-- / My Services -->
 
-            <div class="service">
-                <h3>Full-Stack Development</h3>
-                <p>As a Full-Stack Web Developer my focus is the MERN stack: MongoDB, Express, React, and Node when programming. I use my skills to produce Progressive Web Applications as well as Single Page Applications.</p>
-            </div> 
-            
-            <div class="service">
-                <h3>Back-End Development</h3>
-                <p>As a Back-End Developer I use Node.js and the NPM and I have primarily worked with MySQL & NoSQL databases creating GET, POST, PUT, and DELETE routes as well as the use of Object-Relational-Mapping.</p>
-            </div>
-            
-        
-            </div> 
-    <!-- / My Services -->
+			<a href="#work" class="btn">My Work</a>
+		</section>
 
-        <a href="#work" class="btn">My Work</a>
-    </section>
+		<!-- About Me -->
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">Who I Am</h2>
+			<p class="section_subtitle section__subtitle--about">Developer From Orlando, Florida</p>
 
-    <!-- About Me -->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I Am</h2>
-        <p class="section_subtitle section__subtitle--about">Developer From Orlando, Florida</p>
+			<div class="about-me__body">
+				<p>
+					I am a Full-Stack Web Developer from the University of Central Florida. I have a passion for coding and advancing not only my career but my mind. After learning full stack
+					development from UCF, I have started on the path of Pen Testing. Learning Cyber Security has always been an interest for me and now armed with the knowledge of web development I
+					believe I have what it takes to expand into that field as well.
+				</p>
+				<p>
+					In addition to coding, I have a huge passion for the gaming industry. I have found so many stories that I have fell in love with over the years through gaming and wish to one day
+					be a part of that. To help create something that someone else could fall in love with and then spark a passion to become a valued member of that community would be a perfect full
+					circle moment.
+				</p>
+			</div>
 
-        <div class="about-me__body">
-            <p>I am a Full-Stack Web Developer from the University of Central Florida. I have a passion for coding and advancing not only my career but my mind. After learning full stack development from UCF, I have started on the path of Pen Testing. Learning Cyber Security has always been an interest for me and now armed with the knowledge of web development I believe I have what it takes to expand into that field as well.</p>
-            <p>In addition to coding, I have a huge passion for the gaming industry. I have found so many stories that I have fell in love with over the years through gaming and wish to one day be a part of that. To help create something that someone else could fall in love with and then spark a passion to become a valued member of that community would be a perfect full circle moment.</p>
-        </div>
+			<img src="assets/img/Corey02.jpg" alt="Corey Walking Smiling" class="about-me__img" />
+		</section>
+		<!-- / About Me -->
 
-        <img src="assets/img/Corey02.jpg" alt="Corey Walking Smiling" class="about-me__img">
-    </section>
-    <!-- / About Me -->
-    
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">What I've Done</h2>
-        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-        
-        <div class="portfolio">
-            
-            <!-- Portfolio Item 01 -->
-            <a href="portfolio-Items/portfolio-item01.html" class="portfolio__item">
-                <img src="assets/img/whatDoYouMemeLOGIN.PNG" alt="What Do You Meme screenshot" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio Item 02 -->
-            <a href="portfolio-Items/portfolio-item02.html" class="portfolio__item">
-                <img src="assets/img/myWorkPlaceholder02.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio Item 03 -->
-            <a href="portfolio-Items/portfolio-item03.html" class="portfolio__item">
-                <img src="assets/img/myWorkPlaceholder03.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio Item 04 -->
-            <a href="portfolio-Items/portfolio-item04.html" class="portfolio__item">
-                <img src="assets/img/myWorkPlaceholder04.jpg" alt="" class="portfolio__img">
-            </a>
-            <!-- Portfolio Item 05 -->
-            <a href="portfolio-Items/portfolio-item05.html" class="portfolio__item">
-                <img src="assets/img/myWorkPlaceholder05.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio Item 06 -->
-            <a href="portfolio-Items/portfolio-item06.html" class="portfolio__item">
-                <img src="assets/img/myWorkPlaceholder06.jpg" alt="" class="portfolio__img">
-            </a>
-        </div>
-        <script class="tryhackme" src="https://tryhackme.com/badge/987383"></script>
-    </section>
-    <!-- / My Work -->
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div>
-        </div>
-        <a href="mailto:coreyboensch@devcorey.com" class="footer__link">coreyboensch@devcorey.com</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://www.linkedin.com/in/coreyboensch/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/cboensch6505" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <!-- /Footer -->
+		<!-- My Work -->
+		<section class="my-work" id="work">
+			<h2 class="section__title section__title--work">What I've Done</h2>
+			<p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
-    <script src="https://kit.fontawesome.com/fe9ca6828b.js" crossorigin="anonymous"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <script src="assets/js/script.js"></script>
-</body>
+			<div class="portfolio">
+				<!-- Portfolio Item 01 -->
+				<a href="portfolio-Items/portfolio-item01.html" class="portfolio__item">
+					<img src="assets/img/resu_meHomeCapture.PNG" alt="Resu_Me Landing Page" class="portfolio__img" />
+				</a>
+
+				<!-- Portfolio Item 02 -->
+				<a href="portfolio-Items/portfolio-item02.html" class="portfolio__item">
+					<img src="assets/img/whatDoYouMemeLOGIN.PNG" alt="What Do You Meme screenshot" class="portfolio__img" />
+				</a>
+
+				<!-- Portfolio Item 03 -->
+				<a href="portfolio-Items/portfolio-item03.html" class="portfolio__item">
+					<img src="assets/img/myWorkPlaceholder03.jpg" alt="" class="portfolio__img" />
+				</a>
+
+				<!-- Portfolio Item 04 -->
+				<a href="portfolio-Items/portfolio-item04.html" class="portfolio__item">
+					<img src="assets/img/myWorkPlaceholder04.jpg" alt="" class="portfolio__img" />
+				</a>
+				<!-- Portfolio Item 05 -->
+				<a href="portfolio-Items/portfolio-item05.html" class="portfolio__item">
+					<img src="assets/img/myWorkPlaceholder05.jpg" alt="" class="portfolio__img" />
+				</a>
+
+				<!-- Portfolio Item 06 -->
+				<a href="portfolio-Items/portfolio-item06.html" class="portfolio__item">
+					<img src="assets/img/myWorkPlaceholder06.jpg" alt="" class="portfolio__img" />
+				</a>
+			</div>
+			<script class="tryhackme" src="https://tryhackme.com/badge/987383"></script>
+		</section>
+		<!-- / My Work -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div></div>
+			<a href="mailto:coreyboensch@devcorey.com" class="footer__link">coreyboensch@devcorey.com</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/in/coreyboensch/" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/cboensch6505" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!-- /Footer -->
+
+		<script src="https://kit.fontawesome.com/fe9ca6828b.js" crossorigin="anonymous"></script>
+		<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
 </html>
