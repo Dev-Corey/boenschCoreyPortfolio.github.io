@@ -167,7 +167,7 @@ header h3 {
 .nav__list {
 	list-style: none;
 	display: flex;
-	height: 75%;
+	height: 100%;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
@@ -247,11 +247,11 @@ header h3 {
 	bottom: 6px;
 }
 
-nav img {
+/* nav img {
 	display: flex;
 	width: 100%;
 	margin-top: -12rem;
-}
+} */
 
 /* Intro Section  */
 
